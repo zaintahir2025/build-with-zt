@@ -1,12 +1,12 @@
 /**
- * Build With ZT - Interactive Client Engine
+ * Build With ZT: Interactive Client Engine
  * Theme Switching, Search & Filters, Native Dialogs, FAQ Accordions, and Form Handling
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // -------------------------------------------------------------------------
+  // =========================================================================
   // 1. Theme Management (Dark / Light)
-  // -------------------------------------------------------------------------
+  // =========================================================================
   const themeToggle = document.getElementById('themeToggle');
   const htmlRoot = document.documentElement;
 
@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------------------------------------------------------------------------
+  // =========================================================================
   // 2. Mobile Drawer Navigation
-  // -------------------------------------------------------------------------
+  // =========================================================================
   const menuToggle = document.getElementById('menuToggle');
   const mobileDrawer = document.getElementById('mobileDrawer');
   const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------------------------------------------------------------------------
+  // =========================================================================
   // 3. Projects Category Filter & Live Search
-  // -------------------------------------------------------------------------
+  // =========================================================================
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
   const searchInput = document.getElementById('projectSearchInput');
@@ -93,9 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------------------------------------------------------------------------
+  // =========================================================================
   // 4. Project Modal Details Database (All 9 Repositories)
-  // -------------------------------------------------------------------------
+  // =========================================================================
   const projectModal = document.getElementById('projectModal');
   const modalCategory = document.getElementById('modalCategory');
   const modalTitle = document.getElementById('modalTitle');
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p><strong>Hangman Pro</strong> highlights Flutter's rendering capabilities through custom 2D canvas drawing and smooth animations.</p>
         <h4>Key Technical Highlights:</h4>
         <ul>
-          <li><strong>Programmatic Graphics:</strong> Zero raster images—every element is drawn on-the-fly using Flutter's <code>CustomPainter</code>.</li>
+          <li><strong>Programmatic Graphics:</strong> Zero raster images: every element is drawn on-the-fly using Flutter's <code>CustomPainter</code>.</li>
           <li><strong>Deterministic Game State:</strong> Clean architecture separating game logic from UI rendering.</li>
           <li><strong>Fluid Responsive Scaling:</strong> Pixel-perfect presentation whether played on a small mobile device or large desktop monitor.</li>
         </ul>
@@ -294,9 +294,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------------------------------------------------------------------------
+  // =========================================================================
   // 5. Copy Email Button with Toast Popover
-  // -------------------------------------------------------------------------
+  // =========================================================================
   const copyEmailBtn = document.getElementById('copyEmailBtn');
   const emailVal = document.getElementById('emailVal');
   const toastNotification = document.getElementById('toastNotification');
@@ -340,9 +340,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------------------------------------------------------------------------
+  // =========================================================================
   // 6. FAQ Accordion (Services Page)
-  // -------------------------------------------------------------------------
+  // =========================================================================
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -354,64 +354,152 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // -------------------------------------------------------------------------
-  // 7. Interactive Contact Planner Form Handler
-  // -------------------------------------------------------------------------
-  const contactForm = document.getElementById('contactForm');
-  const senderName = document.getElementById('senderName');
-  const senderEmail = document.getElementById('senderEmail');
-  const projectType = document.getElementById('projectType');
-  const budgetRange = document.getElementById('budgetRange');
-  const timeline = document.getElementById('timeline');
-  const messageText = document.getElementById('messageText');
-  const formStatus = document.getElementById('formStatus');
+  // =========================================================================
+  // 7. Cookie Consent Banner (Accessible & Persistent)
+  // =========================================================================
+  const cookieBanner = document.getElementById('cookieConsentBanner');
+  const acceptCookieBtn = document.getElementById('acceptCookieBtn');
+  const declineCookieBtn = document.getElementById('declineCookieBtn');
 
-  const nameError = document.getElementById('nameError');
-  const emailError = document.getElementById('emailError');
-  const messageError = document.getElementById('messageError');
+  if (cookieBanner) {
+    const hasConsent = localStorage.getItem('zt_cookie_consent');
+    if (!hasConsent) {
+      setTimeout(() => {
+        cookieBanner.classList.add('show');
+      }, 1000);
+    }
 
-  if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
+    if (acceptCookieBtn) {
+      acceptCookieBtn.addEventListener('click', () => {
+        localStorage.setItem('zt_cookie_consent', 'accepted');
+        cookieBanner.classList.remove('show');
+      });
+    }
+
+    if (declineCookieBtn) {
+      declineCookieBtn.addEventListener('click', () => {
+        localStorage.setItem('zt_cookie_consent', 'declined');
+        cookieBanner.classList.remove('show');
+      });
+    }
+  }
+
+  // =========================================================================
+  // 8. Privacy-Friendly Outbound Click Analytics
+  // =========================================================================
+  window.dataLayer = window.dataLayer || [];
+  function trackEvent(category, action, label) {
+    window.dataLayer.push({
+      event: 'portfolio_interaction',
+      eventCategory: category,
+      eventAction: action,
+      eventLabel: label,
+      timestamp: new Date().toISOString()
+    });
+    console.debug(`[Build With ZT Analytics] ${category} > ${action} > ${label}`);
+  }
+
+  // Track conversion clicks
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(waLink => {
+    waLink.addEventListener('click', () => {
+      trackEvent('Conversion', 'Click WhatsApp', waLink.getAttribute('href'));
+    });
+  });
+
+  document.querySelectorAll('a[href^="mailto:"]').forEach(mailLink => {
+    mailLink.addEventListener('click', () => {
+      trackEvent('Conversion', 'Click Mailto', mailLink.getAttribute('href'));
+    });
+  });
+
+  document.querySelectorAll('a[href*="github.com"]').forEach(ghLink => {
+    ghLink.addEventListener('click', () => {
+      trackEvent('Engagement', 'Click GitHub', ghLink.getAttribute('href'));
+    });
+  });
+
+  // =========================================================================
+  // 9. Spam-Protected Project Inquiry Composer & Client Validation
+  // =========================================================================
+  const inquiryForm = document.getElementById('inquiryComposerForm');
+  const senderName = document.getElementById('inquiryName');
+  const senderEmail = document.getElementById('inquiryEmail');
+  const inquiryTopic = document.getElementById('inquiryTopic');
+  const inquiryMessage = document.getElementById('inquiryMessage');
+  const honeypotField = document.getElementById('inquiryGotcha');
+  const composerStatus = document.getElementById('composerStatus');
+
+  const formInitTime = Date.now();
+
+  if (inquiryForm) {
+    inquiryForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      let isValid = true;
 
-      if (!senderName.value.trim()) {
-        if (nameError) nameError.style.display = 'block';
+      // Spam Protection Check 1: Honeypot field filled by bots
+      if (honeypotField && honeypotField.value.trim().length > 0) {
+        console.warn('Bot submission blocked via honeypot trap.');
+        return;
+      }
+
+      // Spam Protection Check 2: Submission submitted under 2.5 seconds (bot behavior)
+      if (Date.now() - formInitTime < 2500) {
+        console.warn('Submission flagged as automated rate anomaly.');
+        return;
+      }
+
+      // Client-Side Validation
+      let isValid = true;
+      const nameVal = senderName ? senderName.value.trim() : '';
+      const emailValStr = senderEmail ? senderEmail.value.trim() : '';
+      const msgVal = inquiryMessage ? inquiryMessage.value.trim() : '';
+
+      const nameErr = document.getElementById('inquiryNameError');
+      const emailErr = document.getElementById('inquiryEmailError');
+      const msgErr = document.getElementById('inquiryMsgError');
+
+      if (!nameVal) {
+        if (nameErr) nameErr.style.display = 'block';
         isValid = false;
-      } else {
-        if (nameError) nameError.style.display = 'none';
+      } else if (nameErr) {
+        nameErr.style.display = 'none';
       }
 
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(senderEmail.value.trim())) {
-        if (emailError) emailError.style.display = 'block';
+      if (!emailRegex.test(emailValStr)) {
+        if (emailErr) emailErr.style.display = 'block';
         isValid = false;
-      } else {
-        if (emailError) emailError.style.display = 'none';
+      } else if (emailErr) {
+        emailErr.style.display = 'none';
       }
 
-      if (!messageText.value.trim()) {
-        if (messageError) messageError.style.display = 'block';
+      if (msgVal.length < 10) {
+        if (msgErr) msgErr.style.display = 'block';
         isValid = false;
-      } else {
-        if (messageError) messageError.style.display = 'none';
+      } else if (msgErr) {
+        msgErr.style.display = 'none';
       }
 
-      if (isValid) {
-        formStatus.className = 'form-status success';
-        formStatus.textContent = 'Preparing project inquiry...';
+      if (!isValid) return;
 
-        const subject = encodeURIComponent(`Project Inquiry: ${projectType ? projectType.value : 'Mobile/Web Build'} - from ${senderName.value}`);
-        const body = encodeURIComponent(
-          `Hi Zain,\n\nName: ${senderName.value}\nEmail: ${senderEmail.value}\nProject Type: ${projectType ? projectType.value : 'General'}\nEstimated Budget: ${budgetRange ? budgetRange.value : 'Flexible'}\nTarget Timeline: ${timeline ? timeline.value : 'ASAP'}\n\nProject Details:\n${messageText.value}\n\nLooking forward to hearing from you!`
-        );
-
-        showToast('Inquiry drafted! Launching your email client...');
-
-        setTimeout(() => {
-          window.location.href = `mailto:zaintahir.dev@gmail.com?subject=${subject}&body=${body}`;
-        }, 600);
+      if (composerStatus) {
+        composerStatus.textContent = 'Formatting email inquiry...';
+        composerStatus.style.color = 'var(--accent-blue-light)';
       }
+
+      trackEvent('Form', 'Submit Validated Inquiry', inquiryTopic ? inquiryTopic.value : 'General');
+
+      const subject = encodeURIComponent(`Project Inquiry: ${inquiryTopic ? inquiryTopic.value : 'Flutter/Web Platform'} from ${nameVal}`);
+      const body = encodeURIComponent(
+        `Hi Zain,\n\nName: ${nameVal}\nEmail: ${emailValStr}\nTopic: ${inquiryTopic ? inquiryTopic.value : 'Mobile/Web Build'}\n\nProject Scope & Message:\n${msgVal}\n\nLooking forward to your response!`
+      );
+
+      showToast('Launching your email client to send inquiry...');
+      setTimeout(() => {
+        window.location.href = `mailto:zaintahir35202@gmail.com?subject=${subject}&body=${body}`;
+        if (composerStatus) {
+          composerStatus.textContent = 'Inquiry generated! Check your email client.';
+        }
+      }, 600);
     });
   }
 });

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <radialGradient id="glowTopRight" cx="90%" cy="10%" r="50%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBottomLeft" cx="10%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#glowTopRight)"/>
+  <rect width="1200" height="630" fill="url(#glowBottomLeft)"/>
+
+  <!-- Border Frame -->
+  <rect x="24" y="24" width="1152" height="582" rx="24" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="2"/>
+  <rect x="24" y="24" width="1152" height="6" rx="3" fill="url(#blueAccent)"/>
+
+  <!-- Top Header / Brand -->
+  <g transform="translate(80, 85)">
+    <rect width="52" height="52" rx="14" fill="rgba(37, 99, 235, 0.15)" stroke="rgba(59, 130, 246, 0.4)" stroke-width="1.5"/>
+    <text x="26" y="33" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="700" fill="#3b82f6" text-anchor="middle">&lt;ZT/&gt;</text>
+    <text x="68" y="34" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Build With ZT</text>
+  </g>
+
+  <!-- Availability Pill -->
+  <g transform="translate(820, 85)">
+    <rect width="300" height="42" rx="21" fill="rgba(37, 99, 235, 0.1)" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1"/>
+    <circle cx="24" cy="21" r="5" fill="#22c55e"/>
+    <text x="40" y="26" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#94a3b8">Available for Global Projects</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="80" y="235" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-1">
+    Engineering High-Performance Apps
+  </text>
+  <text x="80" y="295" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-size="52" font-weight="800" fill="url(#blueAccent)" letter-spacing="-1">
+    &amp; Web Platforms That Scale.
+  </text>
+
+  <!-- Subheadline -->
+  <text x="80" y="355" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="400" fill="#94a3b8">
+    Specialized Flutter Developer &amp; Product Engineer building single-codebase native 60fps MVPs.
+  </text>
+
+  <!-- Core Highlights / Badges Row -->
+  <g transform="translate(80, 405)">
+    <!-- Badge 1 -->
+    <rect x="0" y="0" width="220" height="44" rx="10" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    <text x="110" y="27" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc" text-anchor="middle">⚡ 9+ Public Repositories</text>
+    
+    <!-- Badge 2 -->
+    <rect x="235" y="0" width="230" height="44" rx="10" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    <text x="350" y="27" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc" text-anchor="middle">📱 iOS, Android &amp; Web</text>
+    
+    <!-- Badge 3 -->
+    <rect x="480" y="0" width="225" height="44" rx="10" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    <text x="592" y="27" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc" text-anchor="middle">🔒 Offline-First Architectures</text>
+    
+    <!-- Badge 4 -->
+    <rect x="720" y="0" width="230" height="44" rx="10" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    <text x="835" y="27" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc" text-anchor="middle">🎙️ Low-Latency WebRTC</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="80" y1="490" x2="1120" y2="490" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+  <!-- Footer Info Line -->
+  <g transform="translate(80, 535)">
+    <text x="0" y="16" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Zain Tahir</text>
+    <text x="120" y="16" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="400" fill="#64748b">|</text>
+    <text x="140" y="16" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="500" fill="#3b82f6">WhatsApp: 03254434442</text>
+    <text x="360" y="16" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="400" fill="#64748b">|</text>
+    <text x="380" y="16" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="500" fill="#94a3b8">zaintahir35202@gmail.com</text>
+    <text x="630" y="16" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="400" fill="#64748b">|</text>
+    <text x="650" y="16" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="500" fill="#94a3b8">github.com/zaintahir2025</text>
+  </g>
+</svg>

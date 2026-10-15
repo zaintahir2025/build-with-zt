@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zaintahir2025.github.io/build-with-zt/sitemap.xml
