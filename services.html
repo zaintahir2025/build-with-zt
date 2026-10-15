@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering services by Zain Tahir (Build With ZT). Rapid MVP development, Flutter performance audits, and custom Webflow/Tailwind solutions.">
+  <title>Services & Solutions | Build With ZT</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M14.33 2.75L4.25 12.83l3.03 3.03 10.08-10.08-3.03-3.03zm-7.05 13.11l-3.03-3.03L1.17 15.9l4.58 4.58 3.03-3.03-1.5-1.59z'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="brand-logo" aria-label="Build With ZT Home">
+        <span class="logo-symbol">&lt;ZT/&gt;</span>
+        <span class="logo-text">Build With ZT</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn btn-sm btn-primary hide-mobile">Hire Me</a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="projects.html" class="mobile-link">Projects</a></li>
+        <li><a href="about.html" class="mobile-link">About</a></li>
+        <li><a href="services.html" class="mobile-link active">Services</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="contact.html" class="btn btn-primary btn-block">Start a Project</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+    
+    <header class="page-header">
+      <div class="container">
+        <span class="section-tag">Client Solutions</span>
+        <h1 class="page-title">Services & Engineering Offerings</h1>
+        <p class="section-subtitle" style="max-width: 680px; margin: 0 auto;">
+          Battle-tested product engineering designed to de-risk technical execution, accelerate launch timelines, and cut engineering overhead.
+        </p>
+      </div>
+    </header>
+
+    <!-- Services Catalog -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="services-catalog">
+          
+          <!-- Service 1 -->
+          <div class="service-offering-card glass-panel">
+            <span class="offering-badge">Offering 01</span>
+            <h2 class="offering-title">Rapid MVP Development for Startups</h2>
+            <p class="offering-desc">
+              Have an ambitious vision and need to secure seed funding or launch fast? I build investor-ready, multi-platform MVPs (iOS, Android, and Web) within 3 to 6 weeks using a single, highly optimized Flutter codebase.
+            </p>
+            <ul class="offering-deliverables">
+              <li>Unified cross-platform application (iOS, Android, Web)</li>
+              <li>Authentication & user profile onboarding flow</li>
+              <li>Offline-first caching with Hive & Supabase / Firebase sync</li>
+              <li>Stripe / in-app subscription monetization integration</li>
+              <li>Complete source code, documentation & store readiness</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-block" style="margin-top: 1rem;">Book MVP Sprint</a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-offering-card glass-panel">
+            <span class="offering-badge">Offering 02</span>
+            <h2 class="offering-title">Flutter Architecture Audit & Performance Tuning</h2>
+            <p class="offering-desc">
+              Is your existing mobile app stuttering, crashing, or leaking memory? I perform an exhaustive audit of your codebase and re-engineer critical bottlenecks into smooth 60/120 FPS performance.
+            </p>
+            <ul class="offering-deliverables">
+              <li>Comprehensive frame-rate and memory allocation audit</li>
+              <li>State management migration to modern Riverpod / Bloc</li>
+              <li>Real-time WebRTC audio/video communication integration</li>
+              <li>Automated CI/CD build pipelines using GitHub Actions</li>
+              <li>Actionable technical debt reduction roadmap</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline btn-block" style="margin-top: 1rem;">Request Code Audit</a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-offering-card glass-panel">
+            <span class="offering-badge">Offering 03</span>
+            <h2 class="offering-title">Bespoke Webflow & Custom Tailwind Solutions</h2>
+            <p class="offering-desc">
+              Need a modern, distinctive digital presence that commands brand authority? I craft high-converting websites on Webflow, Wix, or Lovable extended with custom HTML, CSS, JavaScript, and Tailwind CSS.
+            </p>
+            <ul class="offering-deliverables">
+              <li>100% custom visual styling (no generic template feel)</li>
+              <li>Intuitive custom admin panels for operations</li>
+              <li>100/100 Core Web Vitals speed and SEO optimization</li>
+              <li>Seamless REST API and webhook integrations</li>
+              <li>Responsive across ultra-wide monitors, laptops, and mobile</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline btn-block" style="margin-top: 1rem;">Plan Web Platform</a>
+          </div>
+
+        </div>
+
+        <!-- 5-Step Process Roadmap -->
+        <div class="section-header text-center" style="margin-top: 4rem;">
+          <span class="section-tag">How We Work</span>
+          <h2 class="section-title">The 5-Step Engineering Process</h2>
+          <p class="section-subtitle">A transparent, milestone-driven roadmap from first call to market launch.</p>
+        </div>
+
+        <div class="process-timeline">
+          
+          <div class="process-step glass-panel">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Discovery</h3>
+            <p class="step-desc">We align on your strategic goals, target users, technical constraints, and MVP core scope.</p>
+          </div>
+
+          <div class="process-step glass-panel">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Architecture</h3>
+            <p class="step-desc">I design the offline-first database schema, state management hierarchy, and API contracts.</p>
+          </div>
+
+          <div class="process-step glass-panel">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Sprint Build</h3>
+            <p class="step-desc">Weekly testable builds delivered to your hands. You test live progress at every step.</p>
+          </div>
+
+          <div class="process-step glass-panel">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Testing & CI/CD</h3>
+            <p class="step-desc">Rigorous automated testing, security checks, and continuous deployment pipelines.</p>
+          </div>
+
+          <div class="process-step glass-panel">
+            <div class="step-number">05</div>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-desc">Production store rollout, web hosting live deployment, and complete knowledge handover.</p>
+          </div>
+
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="section-header text-center" style="margin-top: 5rem;">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Clear answers to help you make an informed decision.</p>
+        </div>
+
+        <div class="faq-grid">
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Why choose Flutter over React Native or Swift/Kotlin?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Flutter renders directly via Impeller/Skia down to the GPU, guaranteeing identical 60/120 FPS performance and pixel-perfect UI fidelity across iOS, Android, and Web from a single codebase. This cuts development and maintenance costs in half without any sacrifice in native quality.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How long does an MVP build take?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              A standard investor-ready MVP typically takes between 3 to 6 weeks, depending on complexity. Because I utilize proven architectures with Supabase/Firebase and automated CI/CD templates, we avoid reinventing boilerplate and focus immediately on your core value proposition.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do we handle communication and progress updates?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              You receive weekly sprint updates, live testable demo links, and direct communication via Slack, WhatsApp, or email. You will always know what is being built, what is completed, and what is next.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Will I own 100% of the code and intellectual property?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, absolutely. All repository code, database schemas, graphic assets, and deployment keys are transferred directly to your organization upon project completion. Zero vendor lock-in.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-symbol">&lt;ZT/&gt;</span>
+        <span class="footer-title">Build With ZT</span>
+        <p class="footer-tagline">High-Performance Apps & Scalable Web Solutions.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/zaintahir2025" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/zain-tahir-2k25" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Zain Tahir. Build With ZT. Crafted for peak speed and responsiveness.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

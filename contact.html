@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Zain Tahir (Build With ZT). Plan your upcoming Flutter MVP, mobile application, or custom web platform.">
+  <title>Contact & Project Inquiries | Build With ZT</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M14.33 2.75L4.25 12.83l3.03 3.03 10.08-10.08-3.03-3.03zm-7.05 13.11l-3.03-3.03L1.17 15.9l4.58 4.58 3.03-3.03-1.5-1.59z'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="brand-logo" aria-label="Build With ZT Home">
+        <span class="logo-symbol">&lt;ZT/&gt;</span>
+        <span class="logo-text">Build With ZT</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn btn-sm btn-primary hide-mobile">Hire Me</a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="projects.html" class="mobile-link">Projects</a></li>
+        <li><a href="about.html" class="mobile-link">About</a></li>
+        <li><a href="services.html" class="mobile-link">Services</a></li>
+        <li><a href="contact.html" class="mobile-link active">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="contact.html" class="btn btn-primary btn-block">Start a Project</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+    
+    <header class="page-header">
+      <div class="container">
+        <span class="section-tag">Let's Connect</span>
+        <h1 class="page-title">Start Your Next Build</h1>
+        <p class="section-subtitle" style="max-width: 680px; margin: 0 auto;">
+          Have an upcoming MVP, want to optimize an existing app, or need a dedicated engineering partner? Tell me about your goals below.
+        </p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        
+        <div class="contact-layout">
+          
+          <!-- Contact Sidebar -->
+          <div class="contact-sidebar">
+            
+            <div class="contact-info-panel glass-panel">
+              <span class="section-tag">Direct Lines</span>
+              <h2 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; margin-block-end: 0.5rem;">
+                Get in Touch
+              </h2>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; margin-block-end: 1.5rem;">
+                I respond to all project inquiries within 24 hours with an actionable roadmap and timeline estimate.
+              </p>
+
+              <div class="contact-methods-list">
+                
+                <div class="contact-row">
+                  <div class="contact-icon-box teal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <span class="contact-label">Direct Email</span>
+                    <div class="copy-email-row">
+                      <span class="contact-val" id="emailVal">zaintahir.dev@gmail.com</span>
+                      <button class="btn-copy" id="copyEmailBtn" title="Copy email address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-row">
+                  <div class="contact-icon-box blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <div>
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/zain-tahir-2k25" target="_blank" rel="noopener noreferrer" class="contact-link">
+                      in/zain-tahir-2k25
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-row">
+                  <div class="contact-icon-box purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </div>
+                  <div>
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/zaintahir2025" target="_blank" rel="noopener noreferrer" class="contact-link">
+                      github.com/zaintahir2025
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div style="padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
+                <div class="availability-badge" style="margin-bottom: 0;">
+                  <span class="pulse-indicator"></span>
+                  <span>Actively Booking New Projects</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Project Planner Form -->
+          <div class="planner-form-panel glass-panel">
+            <span class="section-tag">Project Planner</span>
+            <h2 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; margin-block-end: 1.5rem;">
+              Tell Me About Your Vision
+            </h2>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="Alex Morgan" required>
+                  <span class="form-error" id="nameError">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Email Address</label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="alex@company.com" required>
+                  <span class="form-error" id="emailError">Please enter a valid email</span>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="projectType" class="form-label">Project Type</label>
+                  <select id="projectType" class="form-input form-select">
+                    <option value="flutter-mvp">Flutter Cross-Platform MVP (iOS, Android, Web)</option>
+                    <option value="app-optimization">Existing App Audit & Performance Tuning</option>
+                    <option value="custom-web">Webflow / Wix / Custom Web Platform</option>
+                    <option value="technical-consultation">Architecture Consultation & Strategy</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="budgetRange" class="form-label">Estimated Budget</label>
+                  <select id="budgetRange" class="form-input form-select">
+                    <option value="1500-3500">$1,500 – $3,500 (Early MVP)</option>
+                    <option value="3500-7000">$3,500 – $7,000 (Complete Platform)</option>
+                    <option value="7000-plus">$7,000+ (Scale & Enterprise)</option>
+                    <option value="hourly">Hourly Contract / Retainer</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="timeline" class="form-label">Target Launch Timeline</label>
+                <select id="timeline" class="form-input form-select">
+                  <option value="asap">ASAP (Next 2–3 weeks)</option>
+                  <option value="1-month">1 Month</option>
+                  <option value="2-3-months">2–3 Months</option>
+                  <option value="exploratory">Exploratory / Planning Stage</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="messageText" class="form-label">Project Brief & Requirements</label>
+                <textarea id="messageText" class="form-input form-textarea" rows="4" placeholder="Describe the core features, business goals, and any reference apps..." required></textarea>
+                <span class="form-error" id="messageError">Please provide a brief message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span>Send Project Inquiry</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+              
+              <p class="form-status" id="formStatus"></p>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-symbol">&lt;ZT/&gt;</span>
+        <span class="footer-title">Build With ZT</span>
+        <p class="footer-tagline">High-Performance Apps & Scalable Web Solutions.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/zaintahir2025" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/zain-tahir-2k25" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Zain Tahir. Build With ZT. Crafted for peak speed and responsiveness.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toastNotification" class="toast-popover" popover="manual" role="status" aria-live="polite">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toastMessage">Notification</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

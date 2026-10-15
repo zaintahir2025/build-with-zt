@@ -1,0 +1,18 @@
+# .NET Build Output
+bin/
+obj/
+*.user
+*.suo
+
+# Flutter & Dart Build Output
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

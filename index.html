@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Build With ZT - Zain Tahir's official portfolio. Specialized Flutter Developer & Product Engineer building high-performance cross-platform apps and modern web platforms.">
+  <meta name="keywords" content="Build With ZT, Zain Tahir, Flutter Developer, Mobile App Developer, Supabase, Firebase, WebRTC, Webflow, Tailwind CSS, Portfolio">
+  <title>Build With ZT | Specialized Flutter Developer & Product Engineer</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M14.33 2.75L4.25 12.83l3.03 3.03 10.08-10.08-3.03-3.03zm-7.05 13.11l-3.03-3.03L1.17 15.9l4.58 4.58 3.03-3.03-1.5-1.59z'/></svg>">
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="brand-logo" aria-label="Build With ZT Home">
+        <span class="logo-symbol">&lt;ZT/&gt;</span>
+        <span class="logo-text">Build With ZT</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <a href="contact.html" class="btn btn-sm btn-primary hide-mobile">Hire Me</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html" class="mobile-link active">Home</a></li>
+        <li><a href="projects.html" class="mobile-link">Projects</a></li>
+        <li><a href="about.html" class="mobile-link">About</a></li>
+        <li><a href="services.html" class="mobile-link">Services</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="contact.html" class="btn btn-primary btn-block">Start a Project</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        
+        <div class="hero-content">
+          <div class="availability-badge">
+            <span class="pulse-indicator"></span>
+            <span>Available for Freelance & Contract Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering <span class="gradient-text">High-Performance Apps</span> & Web Platforms That Scale.
+          </h1>
+
+          <p class="hero-subtext">
+            I help entrepreneurs and ambitious businesses launch faster and cut development costs using a single, highly optimized Flutter codebase—without ever sacrificing native 60fps quality.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="projects.html" class="btn btn-primary">
+              <span>Explore 9+ Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="contact.html" class="btn btn-outline">Let's Connect</a>
+            <a href="https://github.com/zaintahir2025" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/zain-tahir-2k25" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Value Metrics Banner -->
+          <div class="metrics-row">
+            <div class="metric-item">
+              <span class="metric-number">9+</span>
+              <span class="metric-label">Production Repositories</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Cross-Platform (iOS, Android, Web)</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">Offline-1st</span>
+              <span class="metric-label">Supabase, Firebase, Hive</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Profile Card -->
+        <div class="hero-visual">
+          <div class="profile-card glass-panel">
+            <div class="card-glow"></div>
+            <div class="profile-avatar-wrapper">
+              <img src="https://avatars.githubusercontent.com/u/201891321?v=4" alt="Zain Tahir" class="profile-avatar" loading="eager" width="140" height="140">
+              <span class="avatar-status-dot" title="Online & Available"></span>
+            </div>
+            <div class="profile-info">
+              <h2 class="profile-name">Zain Tahir</h2>
+              <p class="profile-role">Specialized Flutter & No-Code Developer</p>
+              <p class="profile-location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>UET Taxila / Islamabad, Pakistan</span>
+              </p>
+            </div>
+
+            <div class="code-terminal-card">
+              <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">build_with_zt.dart</span>
+              </div>
+              <pre class="terminal-body"><code><span class="token-keyword">final</span> partner = EngineeringPartner(
+  name: <span class="token-string">'Zain Tahir'</span>,
+  stack: [<span class="token-string">'Flutter'</span>, <span class="token-string">'WebRTC'</span>, <span class="token-string">'Supabase'</span>],
+  focus: <span class="token-string">'Rapid MVPs & High-Scale Platforms'</span>,
+  readyToBuild: <span class="token-keyword">true</span>,
+);</code></pre>
+            </div>
+
+            <div class="card-badges">
+              <span class="tech-chip">Flutter</span>
+              <span class="tech-chip">Dart</span>
+              <span class="tech-chip">Supabase</span>
+              <span class="tech-chip">Firebase</span>
+              <span class="tech-chip">Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Core Engineering Advantages -->
+    <section class="section about-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Why Build With ZT</span>
+          <h2 class="section-title">The Engineering Edge You Need</h2>
+          <p class="section-subtitle">
+            Hiring me means partnering with a developer who bridges the gap between complex software engineering and beautiful, user-centric design.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-card glass-panel">
+            <div class="card-icon-box teal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 class="card-title">Cross-Platform Flutter Mastery</h3>
+            <p class="card-text">
+              Utilizing a single, highly optimized codebase in Flutter, I help entrepreneurs launch faster and cut development costs in half without ever sacrificing 60fps native feel.
+            </p>
+            <ul class="card-feature-list">
+              <li>Offline-first architectures with Hive & SQLite</li>
+              <li>Low-latency peer-to-peer WebRTC voice & video</li>
+              <li>Riverpod & Clean Bloc state orchestration</li>
+            </ul>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-icon-box blue">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="card-title">Modern Web & No-Code Hybrid</h3>
+            <p class="card-text">
+              When rapid deployment and stunning digital presence are top priorities, I deliver end-to-end web platforms on Webflow, Wix, and Lovable extended with custom HTML, CSS, JavaScript, and Tailwind.
+            </p>
+            <ul class="card-feature-list">
+              <li>No cookie-cutter templates: fully bespoke aesthetics</li>
+              <li>Custom admin panels for total business control</li>
+              <li>Sub-second loading & SEO Core Web Vitals optimization</li>
+            </ul>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-icon-box purple">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="card-title">Full Technical Lifecycle</h3>
+            <p class="card-text">
+              I manage the entire pipeline so you can focus entirely on scaling your business—from secure database schema design to automated GitHub Actions CI/CD deployments.
+            </p>
+            <ul class="card-feature-list">
+              <li>Supabase & Firebase authentication, RLS & functions</li>
+              <li>Automated CI/CD for web and store releases</li>
+              <li>End-to-end testing, clean code, and zero technical debt</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Featured Projects Teaser -->
+    <section class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Selected Works</span>
+          <h2 class="section-title">Featured Applications & Demos</h2>
+          <p class="section-subtitle">
+            A preview of real-world production and open-source applications engineered for speed, privacy, and scale.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Voxora -->
+          <article class="project-card glass-panel" data-category="flutter ai-webrtc">
+            <div class="project-banner bg-gradient-teal">
+              <div class="project-status-pill live-pill">
+                <span class="live-pulse"></span>
+                <span>Live Web Demo</span>
+              </div>
+              <div class="banner-icon">🌊</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">WebRTC</span>
+              </div>
+              <h3 class="project-title">Voxora: Social Voice & Gaming Platform</h3>
+              <p class="project-desc">
+                Next-gen cross-platform social networking app merging flat-design feeds, low-latency peer-to-peer WebRTC voice calling, and integrated AI-driven multiplayer games.
+              </p>
+              <div class="project-actions">
+                <a href="https://zaintahir2025.github.io/voxora-social-voice-chat/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <span>Live App</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/zaintahir2025/voxora-social-voice-chat" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <button class="btn btn-sm btn-ghost view-details-btn" data-project="voxora">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: LinguAI -->
+          <article class="project-card glass-panel" data-category="flutter ai-webrtc">
+            <div class="project-banner bg-gradient-blue">
+              <div class="project-status-pill">
+                <span>Enterprise EdTech</span>
+              </div>
+              <div class="banner-icon">🧠</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Serverpod</span>
+                <span class="tech-tag">Gemini API</span>
+                <span class="tech-tag">Stripe</span>
+              </div>
+              <h3 class="project-title">LinguAI: Gamified AI Language Platform</h3>
+              <p class="project-desc">
+                Enterprise-grade learning system with SuperMemo (SM-2) spaced repetition, real-time Gemini AI contextual conversational tutoring, and token security.
+              </p>
+              <div class="project-actions">
+                <a href="https://github.com/zaintahir2025/lingu_ai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>View Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <button class="btn btn-sm btn-ghost view-details-btn" data-project="lingu_ai">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Ustaad -->
+          <article class="project-card glass-panel" data-category="flutter">
+            <div class="project-banner bg-gradient-orange">
+              <div class="project-status-pill live-pill">
+                <span class="live-pulse"></span>
+                <span>Live Web Demo</span>
+              </div>
+              <div class="banner-icon">🛠️</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">CI/CD</span>
+                <span class="tech-tag">Web & Mobile</span>
+              </div>
+              <h3 class="project-title">Ustaad: Service-Booking Platform</h3>
+              <p class="project-desc">
+                Production-minded booking engine empowering Pakistan's informal skilled trade economy. Engineered with automated Flutter CI/CD pipelines and responsive layout.
+              </p>
+              <div class="project-actions">
+                <a href="https://zaintahir2025.github.io/ustaad-agentic-service-app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <span>Live App</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/zaintahir2025/ustaad-agentic-service-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <button class="btn btn-sm btn-ghost view-details-btn" data-project="ustaad">Details</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center" style="margin-top: 3rem;">
+          <a href="projects.html" class="btn btn-outline btn-lg">
+            <span>View All 9 Repositories & Case Studies</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-box glass-panel text-center" style="padding: clamp(2.5rem, 6vw, 4.5rem);">
+          <span class="section-tag">Let's Partner Up</span>
+          <h2 class="section-title">Ready to Build Your Next Success Story?</h2>
+          <p class="section-subtitle" style="margin-inline: auto; margin-block-end: 2rem;">
+            Whether you need a lightning-fast MVP to secure seed funding or a complete digital presence that commands attention, let's connect and start building.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary btn-lg">Plan Your Project</a>
+            <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-symbol">&lt;ZT/&gt;</span>
+        <span class="footer-title">Build With ZT</span>
+        <p class="footer-tagline">High-Performance Apps & Scalable Web Solutions.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/zaintahir2025" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/zain-tahir-2k25" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Zain Tahir. Build With ZT. Crafted for peak speed and responsiveness.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Native Accessible Modal Dialog -->
+  <dialog id="projectModal" class="project-modal" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <header class="modal-header">
+        <div>
+          <span class="modal-category" id="modalCategory">Category</span>
+          <h3 class="modal-title" id="modalTitle">Project Title</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
+      </header>
+      
+      <div class="modal-body" id="modalBody"></div>
+      <footer class="modal-footer" id="modalFooter"></footer>
+    </div>
+  </dialog>
+
+  <!-- Toast Popover Notification -->
+  <div id="toastNotification" class="toast-popover" popover="manual" role="status" aria-live="polite">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toastMessage">Notification</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
