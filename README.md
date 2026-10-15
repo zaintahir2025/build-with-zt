@@ -16,7 +16,7 @@ The platform is engineered using modern semantic HTML5, pure CSS3 variables, and
 * **`projects.html`** (Repositories Catalog): Complete showcase of all **9 production and open-source repositories** (excluding `pantry_ai`) with real-time keyword search, category filtering, direct live web demo links, and deep-dive architecture modal popups.
 * **`about.html`** (Story and Tenets): Detailed bio from LinkedIn, academic background at Department of Computer Science (UET Taxila), Capstone Project (NeuroScript AI), and core engineering tenets (Offline-First, 60 FPS Fluidity, Reactive State, Automated CI/CD).
 * **`services.html`** (Offerings and Process): Detailed breakdown of client solutions (Rapid MVP Engineering for Startups, Flutter Architecture and Code Audits, Bespoke Webflow/Tailwind platforms), the 5-step engineering roadmap, and an interactive FAQ accordion.
-* **`contact.html`** (Direct Communication): Direct WhatsApp card (03254434442), direct Gmail card (zaintahir35202@gmail.com), copy-to-clipboard toast utility, and spam-protected client-validated inquiry composer.
+* **`contact.html`** (Direct Communication): Direct WhatsApp card (03254434442), direct Gmail card (zaintahir35202@gmail.com), copy-to-clipboard toast utility, and direct engineering consultation without unnecessary forms.
 * **`privacy.html`** (Privacy Policy): Comprehensive zero-tracking privacy policy documenting local theme persistence and privacy-first outbound analytics.
 * **`terms.html`** (Terms and Conditions): Clear founder-friendly terms covering 100% intellectual property ownership, milestone deliveries, and confidentiality.
 * **`404.html`** (Custom Error Page): Branded, responsive error page with intuitive navigation buttons back to Home and Projects.
@@ -48,7 +48,7 @@ The platform is engineered using modern semantic HTML5, pure CSS3 variables, and
 * **Enforced HTTPS**: `<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">` implemented across all pages.
 * **Content Protection**: `X-Content-Type-Options: nosniff` and `referrer: strict-origin-when-cross-origin`.
 * **Zero Secrets in Frontend**: All sensitive keys, build tools, and backend server directories removed from repository root.
-* **Spam Protection**: Honeypot trap field and automated submission-rate limits protecting the inquiry composer.
+* **Direct Privacy Architecture**: Clean, form-free direct messaging channels (WhatsApp and Gmail) eliminating user spam exposure and backend form vulnerabilities.
 * **Cookie Consent**: Accessible, persistent cookie consent banner honoring visitor choices via `localStorage`.
 
 ***
